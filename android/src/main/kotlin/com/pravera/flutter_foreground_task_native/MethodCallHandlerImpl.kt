@@ -1,13 +1,13 @@
-package com.pravera.flutter_foreground_task
+package com.pravera.flutter_foreground_task_native
 
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
 
-import com.pravera.flutter_foreground_task.errors.ErrorCodes
-import com.pravera.flutter_foreground_task.service.ServiceProvider
-import com.pravera.flutter_foreground_task.utils.ErrorHandleUtils
-import com.pravera.flutter_foreground_task.utils.ForegroundServiceUtils
+import com.pravera.flutter_foreground_task_native.errors.ErrorCodes
+import com.pravera.flutter_foreground_task_native.service.ServiceProvider
+import com.pravera.flutter_foreground_task_native.utils.ErrorHandleUtils
+import com.pravera.flutter_foreground_task_native.utils.ForegroundServiceUtils
 
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodCall

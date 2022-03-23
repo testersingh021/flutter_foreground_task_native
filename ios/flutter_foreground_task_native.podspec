@@ -3,7 +3,7 @@
 # Run `pod lib lint flutter_foreground_task.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_foreground_task'
+  s.name             = 'flutter_foreground_task_native'
   s.version          = '0.0.1'
   s.summary          = 'A new Flutter plugin.'
   s.description      = <<-DESC

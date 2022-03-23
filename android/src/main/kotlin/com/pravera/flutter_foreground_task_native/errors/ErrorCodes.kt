@@ -1,4 +1,4 @@
-package com.pravera.flutter_foreground_task.errors
+package com.pravera.flutter_foreground_task_native.errors
 
 /**
  * Codes for errors that may occur in the plugin.

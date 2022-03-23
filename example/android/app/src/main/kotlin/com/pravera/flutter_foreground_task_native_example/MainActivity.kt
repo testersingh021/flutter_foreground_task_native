@@ -1,4 +1,4 @@
-package com.pravera.flutter_foreground_task_example
+package com.pravera.flutter_foreground_task_native_example
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,9 +1,9 @@
-package com.pravera.flutter_foreground_task.models
+package com.pravera.flutter_foreground_task_native.models
 
 import android.content.SharedPreferences
 import org.json.JSONArray
 import org.json.JSONObject
-import com.pravera.flutter_foreground_task.service.ForegroundServicePrefsKey as PrefsKey
+import com.pravera.flutter_foreground_task_native.service.ForegroundServicePrefsKey as PrefsKey
 
 data class NotificationOptions(
     val serviceId: Int,

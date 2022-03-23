@@ -1,7 +1,7 @@
-package com.pravera.flutter_foreground_task.models
+package com.pravera.flutter_foreground_task_native.models
 
 import android.content.SharedPreferences
-import com.pravera.flutter_foreground_task.service.ForegroundServicePrefsKey as PrefsKey
+import com.pravera.flutter_foreground_task_native.service.ForegroundServicePrefsKey as PrefsKey
 
 data class ForegroundTaskOptions(
     val interval: Long,

@@ -1,4 +1,4 @@
-package com.pravera.flutter_foreground_task.utils
+package com.pravera.flutter_foreground_task_native.utils
 
 import android.app.Activity
 import android.content.Context

@@ -1,7 +1,7 @@
-package com.pravera.flutter_foreground_task
+package com.pravera.flutter_foreground_task_native
 
-import com.pravera.flutter_foreground_task.service.ForegroundServiceManager
-import com.pravera.flutter_foreground_task.service.ServiceProvider
+import com.pravera.flutter_foreground_task_native.service.ForegroundServiceManager
+import com.pravera.flutter_foreground_task_native.service.ServiceProvider
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding

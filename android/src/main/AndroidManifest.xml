@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.pravera.flutter_foreground_task">
+  package="com.pravera.flutter_foreground_task_native">
 
     <application>
         <receiver
-            android:name=".service.BootReceiver"
+            android:name="com.pravera.flutter_foreground_task_native.service.BootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -11,7 +11,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".service.RestartReceiver"
+            android:name="com.pravera.flutter_foreground_task_native.service.RestartReceiver"
             android:enabled="true"
             android:exported="false" />
     </application>
