@@ -13,7 +13,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_foreground_task:
+  flutter_foreground_task_native:
     # When depending on this package from a real application you should use:
     #   flutter_foreground_task: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

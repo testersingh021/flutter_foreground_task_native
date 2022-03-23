@@ -7,23 +7,23 @@ import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_foreground_task/exception/foreground_task_exception.dart';
-import 'package:flutter_foreground_task/models/foreground_task_options.dart';
-import 'package:flutter_foreground_task/models/ios_notification_options.dart';
-import 'package:flutter_foreground_task/models/android_notification_options.dart';
+import 'package:flutter_foreground_task_native/exception/foreground_task_exception.dart';
+import 'package:flutter_foreground_task_native/models/foreground_task_options.dart';
+import 'package:flutter_foreground_task_native/models/ios_notification_options.dart';
+import 'package:flutter_foreground_task_native/models/android_notification_options.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-export 'package:flutter_foreground_task/exception/foreground_task_exception.dart';
-export 'package:flutter_foreground_task/models/foreground_task_options.dart';
-export 'package:flutter_foreground_task/models/ios_notification_options.dart';
-export 'package:flutter_foreground_task/models/notification_button.dart';
-export 'package:flutter_foreground_task/models/notification_channel_importance.dart';
-export 'package:flutter_foreground_task/models/notification_icon_data.dart';
-export 'package:flutter_foreground_task/models/android_notification_options.dart';
-export 'package:flutter_foreground_task/models/notification_priority.dart';
-export 'package:flutter_foreground_task/models/notification_visibility.dart';
-export 'package:flutter_foreground_task/ui/will_start_foreground_task.dart';
-export 'package:flutter_foreground_task/ui/with_foreground_task.dart';
+export 'package:flutter_foreground_task_native/exception/foreground_task_exception.dart';
+export 'package:flutter_foreground_task_native/models/foreground_task_options.dart';
+export 'package:flutter_foreground_task_native/models/ios_notification_options.dart';
+export 'package:flutter_foreground_task_native/models/notification_button.dart';
+export 'package:flutter_foreground_task_native/models/notification_channel_importance.dart';
+export 'package:flutter_foreground_task_native/models/notification_icon_data.dart';
+export 'package:flutter_foreground_task_native/models/android_notification_options.dart';
+export 'package:flutter_foreground_task_native/models/notification_priority.dart';
+export 'package:flutter_foreground_task_native/models/notification_visibility.dart';
+export 'package:flutter_foreground_task_native/ui/will_start_foreground_task.dart';
+export 'package:flutter_foreground_task_native/ui/with_foreground_task.dart';
 
 const String _kPortName = 'flutter_foreground_task/isolateComPort';
 

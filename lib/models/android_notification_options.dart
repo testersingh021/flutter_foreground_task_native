@@ -1,8 +1,8 @@
-import 'package:flutter_foreground_task/models/notification_button.dart';
-import 'package:flutter_foreground_task/models/notification_channel_importance.dart';
-import 'package:flutter_foreground_task/models/notification_icon_data.dart';
-import 'package:flutter_foreground_task/models/notification_priority.dart';
-import 'package:flutter_foreground_task/models/notification_visibility.dart';
+import 'package:flutter_foreground_task_native/models/notification_button.dart';
+import 'package:flutter_foreground_task_native/models/notification_channel_importance.dart';
+import 'package:flutter_foreground_task_native/models/notification_icon_data.dart';
+import 'package:flutter_foreground_task_native/models/notification_priority.dart';
+import 'package:flutter_foreground_task_native/models/notification_visibility.dart';
 
 /// Notification options for Android platform.
 class AndroidNotificationOptions {

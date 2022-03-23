@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_foreground_task/flutter_foreground_task.dart';
+import 'package:flutter_foreground_task_native/flutter_foreground_task_native.dart';
 
 /// A widget to start the foreground service when the app is minimized or closed.
 /// This widget must be declared above the [Scaffold] widget.

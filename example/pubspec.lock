@@ -76,13 +76,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_foreground_task:
+  flutter_foreground_task_native:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "3.5.5"
+    version: "1.0.1"
   flutter_lints:
     dependency: "direct dev"
     description:
