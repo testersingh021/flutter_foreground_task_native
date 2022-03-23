@@ -1,6 +1,6 @@
 This plugin is used to implement a foreground service on the Android platform.
 
-[![pub package](https://img.shields.io/pub/v/flutter_foreground_task.svg)](https://pub.dev/packages/flutter_foreground_task_native)
+[![pub package](https://img.shields.io/pub/v/flutter_foreground_task_native.svg)](https://pub.dev/packages/flutter_foreground_task_native)
 
 ## Features
 
