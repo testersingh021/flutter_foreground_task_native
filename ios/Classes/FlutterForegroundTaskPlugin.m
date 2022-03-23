@@ -1,6 +1,6 @@
 #import "FlutterForegroundTaskPlugin.h"
-#if __has_include(<flutter_foreground_task/flutter_foreground_task-Swift.h>)
-#import <flutter_foreground_task/flutter_foreground_task-Swift.h>
+#if __has_include(<flutter_foreground_task_native/flutter_foreground_task_native-Swift.h>)
+#import <flutter_foreground_task_native/flutter_foreground_task_native-Swift.h>
 #else
 // Support project import fallback if the generated compatibility header
 // is not copied when this plugin is created as a library.
