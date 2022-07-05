@@ -33,14 +33,13 @@ jobs:
             run: |
                 mkdir -p ~/.pub-cache
                 cat <<EOF > ~/.pub-cache/credentials.json
-                {
-                  "accessToken":"${{ secrets.OAUTH_ACCESS_TOKEN }}",
-                  "refreshToken":"${{ secrets.OAUTH_REFRESH_TOKEN }}",
-                  "tokenEndpoint":"https://accounts.google.com/o/oauth2/token",
-                  "scopes": [ "openid", "https://www.googleapis.com/auth/userinfo.email" ],
-                  "expiration": 1570721159347
-                }
-                EOF
+
+           env:
+            PUB_DEV_PUBLISH_ACCESS_TOKEN: ${{ secrets.PUB_DEV_PUBLISH_ACCESS_TOKEN }}
+            PUB_DEV_PUBLISH_REFRESH_TOKEN: ${{ secrets.PUB_DEV_PUBLISH_REFRESH_TOKEN }}
+            PUB_DEV_PUBLISH_TOKEN_ENDPOINT: ${{ secrets.PUB_DEV_PUBLISH_TOKEN_ENDPOINT }}
+            PUB_DEV_PUBLISH_EXPIRATION: ${{ secrets.PUB_DEV_PUBLISH_EXPIRATION }}
+
 
 #      - name: Setup Pub Credentials
 #        shell: bash
