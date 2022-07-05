@@ -25,7 +25,7 @@ fi
 
 # Create credentials.json file.
   echo "Copy credentials"
-  #mkdir -p /opt/hostedtoolcache/flutter/1.9.1-hotfix.2-stable/x64/.pub-cache/
+  mkdir -p  HOME/.config/dart/
 #  echo "$CREDENTIAL_JSON" > ~/.pub-cache/credentials.json
 #  CREDENTIAL_JSON="secrets.CREDENTIAL_JSON"
   cat <<EOF > HOME/.config/dart/pub-credentials.json
