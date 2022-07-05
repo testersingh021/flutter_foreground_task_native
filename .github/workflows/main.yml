@@ -27,7 +27,7 @@ jobs:
             PUB_DEV_PUBLISH_TOKEN_ENDPOINT: ${{ secrets.PUB_DEV_PUBLISH_TOKEN_ENDPOINT }}
             PUB_DEV_PUBLISH_EXPIRATION: ${{ secrets.PUB_DEV_PUBLISH_EXPIRATION }}
         run: |
-            sh ./pub_login.sh
+           sh ./pub_login.sh
 #        run: echo ${{secrets.CREDENTIAL_JSON}} > /opt/hostedtoolcache/flutter/1.9.1-hotfix.2-stable/x64/.pub-cache/credentials.json
 #        env:
 #           credential: ${{ secrets.CREDENTIAL_JSON }}

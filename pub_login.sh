@@ -25,10 +25,10 @@ fi
 
 # Create credentials.json file.
   echo "Copy credentials"
-  mkdir -p ~/.pub-cache
-  echo "$CREDENTIAL_JSON" > ~/.pub-cache/credentials.json
-  CREDENTIAL_JSON="secrets.CREDENTIAL_JSON"
-cat <<EOF > /opt/hostedtoolcache/flutter/1.9.1-hotfix.2-stable/x64/.pub-cache/credentials.json
+  mkdir -p /opt/hostedtoolcache/flutter/1.9.1-hotfix.2-stable/x64/.pub-cache/credentials.json
+#  echo "$CREDENTIAL_JSON" > ~/.pub-cache/credentials.json
+#  CREDENTIAL_JSON="secrets.CREDENTIAL_JSON"
+  cat <<EOF > /opt/hostedtoolcache/flutter/1.9.1-hotfix.2-stable/x64/.pub-cache/credentials.json
 {
   "accessToken":"${PUB_DEV_PUBLISH_ACCESS_TOKEN}",
   "refreshToken":"${PUB_DEV_PUBLISH_REFRESH_TOKEN}",
