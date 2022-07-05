@@ -4,6 +4,7 @@ version: 1.0.3
 homepage: https://github.com/testersingh021/flutter_foreground_task_native.git
 #flutter packages pub publish
 
+
 environment:
   sdk: ">=2.16.0 <3.0.0"
   flutter: ">=1.20.0"
