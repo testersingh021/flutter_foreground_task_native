@@ -1,34 +1,53 @@
 name: Publish Package
 
-on: push
+#on: push
 #  release: [published]
+on:
+  push:
+    branches: [ master ]
 
 jobs:
-  build:
+  publish:
+
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Install Flutter
-        uses: subosito/flutter-action@v1
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Publish
+        uses: sakebook/actions-flutter-pub-publisher@v1.4.0
         with:
-          channel: 'dev'
-      - name: Install dependencies
-        run: flutter pub get
+          credential: ${{ secrets.CREDENTIAL_JSON }}
+          flutter_package: false
+          skip_test: true
+          dry_run: true
+
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - uses: actions/checkout@v1
+#      - name: Install Flutter
+#        uses: subosito/flutter-action@v1
+#        with:
+#          channel: 'dev'
+#      - name: Install dependencies
+#        run: flutter pub get
       #      - name: Analyze
       #        run: flutter analyze
       #      - name: Run tests
-      #        run: flutter test
-      - name: Dry run publish
-        run: |
-            echo "Copy credentials"
-            mkdir -p ~/.pub-cache
-            echo "$credential" > ~/.pub-cache/credentials.json
-            echo "Run pub publish --dry-run"
-            flutter pub publish --dry-run
-
-        env:
-            credential: ${{ secrets.CREDENTIAL_JSON }}
+#      #        run: flutter test
+#      - name: Dry run publish
+#        run: |
+#            echo "Copy credentials"
+#            mkdir -p ~/.pub-cache
+#            echo "$credential" > ~/.pub-cache/credentials.json
+#            echo "Run pub publish --dry-run"
+#            flutter pub publish --dry-run
+#
+#        env:
+#            credential: ${{ secrets.CREDENTIAL_JSON }}
 
 #      - name: Setup Pub Credentials
 #        shell: bash
@@ -45,9 +64,9 @@ jobs:
 #
 
 #      - name: Check Publish Warnings
-#        run: dart pub publish --dry-run
-      - name: Publish Package
-        run: flutter pub publish -f
+##        run: dart pub publish --dry-run
+#      - name: Publish Package
+#        run: flutter pub publish -f
 #name: Build and Release APK
 #on: push
 #jobs:
