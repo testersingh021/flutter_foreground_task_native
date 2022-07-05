@@ -55,9 +55,7 @@ void updateCallback() {
 
 class SecondTaskHandler extends TaskHandler {
   @override
-  Future<void> onStart(DateTime timestamp, SendPort? sendPort) async {
-
-  }
+  Future<void> onStart(DateTime timestamp, SendPort? sendPort) async {}
 
   @override
   Future<void> onEvent(DateTime timestamp, SendPort? sendPort) async {
@@ -70,9 +68,7 @@ class SecondTaskHandler extends TaskHandler {
   }
 
   @override
-  Future<void> onDestroy(DateTime timestamp) async {
-
-  }
+  Future<void> onDestroy(DateTime timestamp) async {}
 }
 
 class ExampleApp extends StatefulWidget {
@@ -92,8 +88,8 @@ class _ExampleAppState extends State<ExampleApp> {
         channelName: 'Foreground Notification',
         channelDescription:
             'This notification appears when the foreground service is running.',
-        channelImportance: NotificationChannelImportance.LOW,
-        priority: NotificationPriority.LOW,
+        channelImportance: NotificationChannelImportance.HIGH,
+        priority: NotificationPriority.HIGH,
         iconData: const NotificationIconData(
           resType: ResourceType.mipmap,
           resPrefix: ResourcePrefix.ic,

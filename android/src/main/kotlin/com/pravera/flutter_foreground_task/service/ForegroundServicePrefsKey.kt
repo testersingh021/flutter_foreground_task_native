@@ -1,4 +1,4 @@
-package com.pravera.flutter_foreground_task_native.service
+package com.pravera.flutter_foreground_task.service
 
 /**
  * Key values for data stored in SharedPreferences.

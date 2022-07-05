@@ -1,4 +1,4 @@
-package com.pravera.flutter_foreground_task_native.service
+package com.pravera.flutter_foreground_task.service
 
 /** ServiceProvider */
 interface ServiceProvider {

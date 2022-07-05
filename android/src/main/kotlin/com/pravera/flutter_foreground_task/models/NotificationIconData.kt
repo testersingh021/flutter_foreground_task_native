@@ -1,4 +1,4 @@
-package com.pravera.flutter_foreground_task_native.models
+package com.pravera.flutter_foreground_task.models
 
 data class NotificationIconData(
     val resType: String,

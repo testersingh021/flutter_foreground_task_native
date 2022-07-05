@@ -1,6 +1,6 @@
-package com.pravera.flutter_foreground_task_native.utils
+package com.pravera.flutter_foreground_task.utils
 
-import com.pravera.flutter_foreground_task_native.errors.ErrorCodes
+import com.pravera.flutter_foreground_task.errors.ErrorCodes
 import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodChannel
 

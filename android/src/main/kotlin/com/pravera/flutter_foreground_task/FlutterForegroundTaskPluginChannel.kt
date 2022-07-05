@@ -1,4 +1,4 @@
-package com.pravera.flutter_foreground_task_native
+package com.pravera.flutter_foreground_task
 
 import android.app.Activity
 import io.flutter.plugin.common.BinaryMessenger

@@ -1,4 +1,4 @@
-package com.pravera.flutter_foreground_task_native.service
+package com.pravera.flutter_foreground_task.service
 
 import android.annotation.SuppressLint
 import android.app.*
@@ -8,10 +8,10 @@ import android.net.wifi.WifiManager
 import android.os.*
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import com.pravera.flutter_foreground_task_native.models.ForegroundServiceStatus
-import com.pravera.flutter_foreground_task_native.models.ForegroundTaskOptions
-import com.pravera.flutter_foreground_task_native.models.NotificationOptions
-import com.pravera.flutter_foreground_task_native.service.ForegroundServicePrefsKey as PrefsKey
+import com.pravera.flutter_foreground_task.models.ForegroundServiceStatus
+import com.pravera.flutter_foreground_task.models.ForegroundTaskOptions
+import com.pravera.flutter_foreground_task.models.NotificationOptions
+import com.pravera.flutter_foreground_task.service.ForegroundServicePrefsKey as PrefsKey
 import io.flutter.FlutterInjector
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.dart.DartExecutor
