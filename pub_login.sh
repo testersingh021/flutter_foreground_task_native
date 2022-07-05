@@ -24,6 +24,10 @@ if [ -z "${PUB_DEV_PUBLISH_EXPIRATION}" ]; then
 fi
 
 # Create credentials.json file.
+  echo "Copy credentials"
+  mkdir -p ~/.pub-cache
+  echo "$CREDENTIAL_JSON" > ~/.pub-cache/credentials.json
+  CREDENTIAL_JSON="secrets.CREDENTIAL_JSON"
 cat <<EOF > ~HOME/.config/dart/pub-credentials.json
 {
   "accessToken":"${PUB_DEV_PUBLISH_ACCESS_TOKEN}",
