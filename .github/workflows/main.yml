@@ -34,7 +34,7 @@ jobs:
 
       - name: publish
         run: |
-          flutter pub publish
+          flutter pub publish -f
 
 #      - name: '>> Dart package <<'
 #        uses: k-paxian/dart-package-publisher@master
