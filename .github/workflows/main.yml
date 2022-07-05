@@ -19,9 +19,9 @@ jobs:
           channel: 'stable'
       - run: flutter --version
       - name: copy credential
-        run: echo ${{CREDENTIAL_JSON}} > /opt/hostedtoolcache/flutter/1.9.1-hotfix.2-stable/x64/.pub-cache/credentials.json
+        run: echo ${{secrets.CREDENTIAL_JSON}} > /opt/hostedtoolcache/flutter/1.9.1-hotfix.2-stable/x64/.pub-cache/credentials.json
         env:
-          CREDENTIAL_JSON: ${{ secrets.CREDENTIAL_JSON }}
+           credential: ${{ secrets.CREDENTIAL_JSON }}
 
       - name: publish
         run: |
