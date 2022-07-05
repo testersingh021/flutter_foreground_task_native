@@ -15,13 +15,13 @@ jobs:
       - name: Install Flutter
         uses: subosito/flutter-action@v1
         with:
-          flutter-version: '1.9.1+hotfix.6'
+          channel: 'dev'
       - name: Install dependencies
         run: flutter pub get
-      - name: Analyze
-        run: flutter analyze
-      - name: Run tests
-        run: flutter test
+#      - name: Analyze
+#        run: flutter analyze
+#      - name: Run tests
+#        run: flutter test
       - name: Setup Pub Credentials
         shell: bash
         env:
@@ -32,9 +32,9 @@ jobs:
         run: |
           sh ./pub_login.sh
       - name: Check Publish Warnings
-        run: pub publish --dry-run
+        run: flutter pub publish --dry-run
       - name: Publish Package
-        run: pub publish -f
+        run: flutter pub publish -f
 #jobs:
 #  publish:
 #
