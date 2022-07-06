@@ -34,7 +34,9 @@ jobs:
       - name: Check Publish Warnings
         run: flutter pub publish --dry-run
       - name: Publish Package
-        run: yes | flutter pub publish
+        run: |
+           yes | flutter pub publish > file.txt
+           start | file.txt
       #jobs:
       #  publish:
       #
