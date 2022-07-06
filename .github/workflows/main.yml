@@ -36,7 +36,6 @@ jobs:
       - name: Publish Package
         run: |
           dart pub publish
-          sleep 5
           echo "y"
 #jobs:
 #  publish:
