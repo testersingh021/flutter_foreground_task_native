@@ -32,9 +32,9 @@ jobs:
 #        run: |
 #          sh ./pub_login.sh
       - name: Check Publish Warnings
-        run: flutter packages pub publish --dry-run
+        run: dart  pub publish --dry-run
       - name: Publish Package
-        run: flutter packages pub publish
+        run: dart  pub publish | echo "y"
 #jobs:
 #  publish:
 #
