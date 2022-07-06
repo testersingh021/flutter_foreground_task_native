@@ -33,7 +33,7 @@ jobs:
           sh ./pub_login.sh
       - name: Check Publish Warnings
         run: |
-           sudo cat /$HOME/.config/dart/pub-credential.json
+           sudo cat /$HOME/.config/dart/pub-credentials.json
            #flutter pub publish --dry-run
 #      - name: Publish Package
 #        run: |
