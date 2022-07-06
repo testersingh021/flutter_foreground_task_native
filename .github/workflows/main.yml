@@ -34,10 +34,10 @@ jobs:
       - name: Check Publish Warnings
         run: |
            sudo cat /$HOME/.config/dart/pub-credentials.json
-           #flutter pub publish --dry-run
-#      - name: Publish Package
-#        run: |
-#           flutter pub publish
+           flutter pub publish --dry-run
+      - name: Publish Package
+        run: |
+           flutter pub publish
 
       #jobs:
       #  publish:
