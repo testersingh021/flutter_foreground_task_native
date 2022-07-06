@@ -6,5 +6,7 @@
 * CI-CD testing 22
 * ## 1.0.5
 * CI-CD testing 34
+* ## 1.0.6
+* CI-CD testing
 
 

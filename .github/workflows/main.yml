@@ -37,7 +37,7 @@ jobs:
            flutter pub publish --dry-run
       - name: Publish Package
         run: |
-            yes | flutter pub publish
+            flutter pub publish
 
       #jobs:
       #  publish:
