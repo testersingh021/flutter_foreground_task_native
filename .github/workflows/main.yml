@@ -34,9 +34,7 @@ jobs:
       - name: Check Publish Warnings
         run: dart pub publish --dry-run
       - name: Publish Package
-        run: |
-          dart pub publish
-          echo "y"
+        run:  yes | dart pub publish
 #jobs:
 #  publish:
 #
