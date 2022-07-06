@@ -32,9 +32,12 @@ jobs:
 #        run: |
 #          sh ./pub_login.sh
       - name: Check Publish Warnings
-        run: dart  pub publish --dry-run
+        run: dart pub publish --dry-run
       - name: Publish Package
-        run: dart  pub publish | echo "y"
+        run: |
+          dart pub publish
+          sleep 5
+          echo "y"
 #jobs:
 #  publish:
 #
