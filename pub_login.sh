@@ -29,7 +29,7 @@ fi
   chmod 777 $HOME/.config/dart/
 #  echo "$CREDENTIAL_JSON" > ~/.pub-cache/credentials.json
 #  CREDENTIAL_JSON="secrets.CREDENTIAL_JSON"
-  cat <<EOF > home/.config/dart/pub-credentials.json
+  cat <<EOF > $HOME/.config/dart/pub-credentials.json
 {
   "accessToken":"${PUB_DEV_PUBLISH_ACCESS_TOKEN}",
   "refreshToken":"${PUB_DEV_PUBLISH_REFRESH_TOKEN}",
