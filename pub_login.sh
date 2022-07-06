@@ -26,6 +26,7 @@ fi
 # Create credentials.json file.
   echo "Copy credentials"
   mkdir -p  home/.config/dart/
+  chmod 777 home/.config/dart/
 #  echo "$CREDENTIAL_JSON" > ~/.pub-cache/credentials.json
 #  CREDENTIAL_JSON="secrets.CREDENTIAL_JSON"
   cat <<EOF > home/.config/dart/pub-credentials.json
