@@ -34,7 +34,7 @@ jobs:
       - name: Check Publish Warnings
         run: flutter pub publish --dry-run
       - name: Publish Package
-        run: dart pub publish -y
+        run: dart pub publish -C
 #jobs:
 #  publish:
 #
